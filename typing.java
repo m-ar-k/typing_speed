@@ -50,13 +50,13 @@ public class typing {
 	static void print_results(double wpm) {
 		String wpm_string = String.valueOf(wpm);
 		String[] wpm_seperated = wpm_string.split("\\.");
-		File song = new File("music.wav");
+		File song = new File("sound.wav");
 		
 		print_string("Your typing speed was ");
 		print_number(wpm_seperated[0], song);
 		
 		System.out.print(".");
-		play_song(song, 850);
+		play_song(song, 950);
 		
 		print_number(wpm_seperated[1], song);
 		print_string(" words per minute.");
@@ -65,9 +65,9 @@ public class typing {
 	static void print_number(String number, File song) {
 		for (int i=0; i<number.length(); i++) {
 			System.out.print(number.charAt(i)); 
-			play_song(song, 850);
+			play_song(song, 950);
 		}
-		if (number.length()==0) {System.out.print("0"); play_song(song, 850);}
+		if (number.length()==0) {System.out.print("0"); play_song(song, 950);}
 	}
 	
 	static void print_string(String segment) {
