@@ -1,5 +1,7 @@
 # typing_speed
 Command line program that calculates typing speed  
+  
+Program goes line by line through the test file prompting user input which can be modified until under inputs ENTER which moves onto the next line.  
 
     Replace contents of test1.txt and test2.txt with desired test content, program randomly chooses between test files
 
